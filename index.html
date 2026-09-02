@@ -102,8 +102,10 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
 
   <h3>O que é enviado, e para quê</h3>
   <p>
-    Tudo abaixo depende de você ter criado uma conta anônima. O jogo pode ser
-    jogado por completo sem nada disso.
+    Quase tudo abaixo depende de você ter criado uma conta anônima, e o jogo
+    pode ser jogado por completo sem nada disso. A exceção é o relatório de
+    erro, que é enviado mesmo sem conta — porque o defeito que mais precisa
+    ser consertado é justamente o que impede alguém de chegar a criar uma.
   </p>
   <div class="rolagem">
   <table>
@@ -143,6 +145,15 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
       servidor, mais três números legíveis (Núcleo, fase e nº de partidas)</td>
       <td>não perder tudo ao trocar de celular</td>
       <td>90 dias</td>
+    </tr>
+    <tr>
+      <td><strong>Relatório de erro</strong> — quando o jogo falha: a mensagem
+      do motor, o arquivo e a linha do código do jogo, a pilha de chamada, o
+      sistema (Android ou iOS), o <em>modelo</em> do aparelho e as versões do
+      jogo e do motor. <strong>Este é o único item que não exige conta</strong>
+      — sem conta, a linha é gravada sem dono</td>
+      <td>consertar o que quebrou no aparelho de quem está jogando</td>
+      <td>30 dias</td>
     </tr>
     <tr>
       <td><strong>Endereço IP</strong></td>
@@ -191,8 +202,11 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
   <ul>
     <li>Não pede e-mail, telefone, nome real, cadastro nem login de rede social.</li>
     <li>Não acessa contatos, fotos, localização, microfone nem câmera.</li>
-    <li>Não coleta o modelo nem o identificador do seu aparelho (o AdMob é a
-        exceção descrita acima).</li>
+    <li>Não coleta identificador de aparelho — não há IMEI, número de série
+        nem ID de publicidade (o AdMob é a exceção descrita acima).</li>
+    <li>O <em>modelo</em> do aparelho ("SM-G991B") e o sistema vão junto com o
+        relatório de erro, e só ali — ver "Relatório de erro" acima. Um modelo
+        é o mesmo de milhões de aparelhos e não aponta para o seu.</li>
     <li>Não tem compra dentro do aplicativo. O "Núcleo" é moeda do jogo e não
         se compra com dinheiro.</li>
     <li>Não tem conversa entre jogadores.</li>
@@ -311,8 +325,11 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
 
   <h3>What is sent, and why</h3>
   <p>
-    Everything below requires you to have created an anonymous account. The
-    game can be played in full without any of it.
+    Almost everything below requires you to have created an anonymous account,
+    and the game can be played in full without any of it. The exception is the
+    error report, which is sent even with no account — because the fault that
+    most needs fixing is precisely the one that stops someone from ever
+    creating one.
   </p>
   <div class="rolagem">
   <table>
@@ -352,6 +369,16 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
       the server, plus three readable numbers (Core, stage and run count)</td>
       <td>not losing everything when you change phones</td>
       <td>90 days</td>
+    </tr>
+    <tr>
+      <td><strong>Error report</strong> — when the game fails: the engine
+      message, the file and line of the game's code, the call stack, the
+      operating system (Android or iOS), the device <em>model</em>, and the
+      game and engine versions. <strong>This is the only item that does not
+      require an account</strong> — with no account the row is stored with no
+      owner</td>
+      <td>fixing what broke on the phone of someone who is playing</td>
+      <td>30 days</td>
     </tr>
     <tr>
       <td><strong>IP address</strong></td>
@@ -399,8 +426,11 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
   <ul>
     <li>No e-mail, phone number, real name, sign-up or social login.</li>
     <li>No access to contacts, photos, location, microphone or camera.</li>
-    <li>No collection of your device model or device identifier (AdMob is the
-        exception described above).</li>
+    <li>No collection of a device identifier — no IMEI, no serial number, no
+        advertising ID (AdMob is the exception described above).</li>
+    <li>The <em>device model</em> ("SM-G991B") and the operating system are sent
+        with a crash report, and only there — see "Error reports" above. A model
+        is shared by millions of handsets and does not single out yours.</li>
     <li>No in-app purchases. "Core" is in-game currency and cannot be bought
         with money.</li>
     <li>No chat between players.</li>

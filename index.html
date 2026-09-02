@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Orbital Bastion — Política de Privacidade / Privacy Policy</title>
 <style>
-/* A política é o documento mais chato do mundo e por isso ela é CURTA e tem
+/* A política é o documento mais chato do mundo e por isso ela é DIRETA e tem
    contraste de livro, não de painel: quem chega aqui veio da ficha da loja
-   com uma pergunta, e a resposta cabe na primeira tela. O tema do jogo
-   aparece só na faixa do topo. */
+   com uma pergunta, e a resposta tem de caber sem rolagem infinita. O tema do
+   jogo aparece só na faixa do topo. */
 :root{
   color-scheme: dark light;
   --fundo:#0A0E14; --papel:#131A24; --tinta:#E6ECF4; --fraco:#8A9AAE;
@@ -61,6 +61,10 @@ code{
   background:rgba(127,127,127,.15); padding:1px 5px; border-radius:4px;
   font-size:.9em;
 }
+table{border-collapse:collapse; width:100%; margin:10px 0; font-size:14px}
+th,td{border:1px solid var(--linha); padding:7px 9px; text-align:left; vertical-align:top}
+th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.05em}
+.rolagem{overflow-x:auto}
 </style>
 </head>
 <body>
@@ -76,55 +80,203 @@ code{
   <h2>Português <span class="lang">pt-BR</span></h2>
 
   <p class="destaque">
-    Orbital Bastion não coleta nenhum dado seu. Não tem servidor, não tem conta,
-    não tem anúncio e não tem rastreador.
+    O jogo funciona inteiro sem internet e sem conta. Enquanto você não escolher
+    um apelido, nada sai do seu aparelho. Ao escolher um apelido, você cria uma
+    conta anônima — sem e-mail, sem senha, sem nome real — e a partir daí
+    algumas coisas passam a ser enviadas. Esta página diz exatamente quais.
   </p>
 
-  <h3>O que o jogo guarda</h3>
+  <h3>Quem é o responsável</h3>
   <p>
-    Um arquivo, no seu próprio aparelho, com o seu progresso: fases vencidas,
-    Núcleo, peças compradas, guardião escolhido e as suas preferências de
-    idioma, volume, vibração e acessibilidade.
+    Daniel Novi, desenvolvedor independente, responsável pelo tratamento dos
+    dados descritos aqui.
+    Contato: <a href="mailto:orbitalbastion@gmail.com">orbitalbastion@gmail.com</a>
+  </p>
+
+  <h3>O que fica só no seu aparelho</h3>
+  <p>
+    Um arquivo de progresso: fases vencidas, Núcleo, peças compradas, guardião
+    escolhido e suas preferências de idioma, volume, vibração e acessibilidade.
+    Sem conta, ele nunca sai dali.
+  </p>
+
+  <h3>O que é enviado, e para quê</h3>
+  <p>
+    Tudo abaixo depende de você ter criado uma conta anônima. O jogo pode ser
+    jogado por completo sem nada disso.
+  </p>
+  <div class="rolagem">
+  <table>
+    <tr><th>O quê</th><th>Para quê</th><th>Quanto tempo fica</th></tr>
+    <tr>
+      <td><strong>Apelido</strong> — a única coisa que você escreve</td>
+      <td>identificar você no placar e no perfil</td>
+      <td>até você apagar a conta</td>
+    </tr>
+    <tr>
+      <td><strong>Identificador da conta</strong> — um código aleatório criado
+      pelo servidor, mais um token de acesso</td>
+      <td>saber que a conta é sua, sem pedir e-mail nem senha</td>
+      <td>até você apagar a conta</td>
+    </tr>
+    <tr>
+      <td><strong>Rosto e paisagem do perfil</strong> — escolhidos de uma lista
+      fechada dentro do jogo</td>
+      <td>aparência do seu perfil</td>
+      <td>até você apagar a conta</td>
+    </tr>
+    <tr>
+      <td><strong>Resultado das partidas no modo de placar</strong> — duração,
+      abates, nível, guardião, doutrina e as peças que você levou</td>
+      <td>montar o placar semanal e o quadro de honra</td>
+      <td>até você apagar a conta (ver a ressalva do quadro de honra abaixo)</td>
+    </tr>
+    <tr>
+      <td><strong>Como vão suas partidas na campanha</strong> — que fase
+      começou, venceu, perdeu ou abandonou, quanto tempo levou, a causa da
+      derrota e quanto Núcleo você tinha</td>
+      <td>entender onde o jogo está difícil demais e ajustá-lo</td>
+      <td>60 dias</td>
+    </tr>
+    <tr>
+      <td><strong>Cópia do seu save</strong> — comprimida e ilegível para o
+      servidor, mais três números legíveis (Núcleo, fase e nº de partidas)</td>
+      <td>não perder tudo ao trocar de celular</td>
+      <td>90 dias</td>
+    </tr>
+    <tr>
+      <td><strong>Endereço IP</strong></td>
+      <td>limitar abuso automatizado (não é gravado junto da sua conta)</td>
+      <td>ver "Sobre o IP", abaixo</td>
+    </tr>
+  </table>
+  </div>
+  <p>
+    <strong>Nada disso é texto livre, exceto o apelido.</strong> Os dados de
+    partida são números e nomes do próprio jogo — não há campo para escrever, e
+    não há conversa entre jogadores.
+  </p>
+
+  <h3>Sobre o IP</h3>
+  <p>
+    O IP é usado como parte de um contador temporário que impede um mesmo
+    endereço de criar contas ou enviar resultados em massa. Ele não é guardado
+    junto do seu apelido nem do seu progresso. As linhas antigas desse contador
+    são apagadas ao longo do uso do servidor, e não em um prazo fixo — sendo
+    honesto: uma linha pode sobreviver mais que alguns minutos se o servidor
+    ficar sem movimento.
+  </p>
+
+  <h3>Anúncios</h3>
+  <p>
+    O jogo exibe vídeos <strong>opcionais</strong>, que você escolhe assistir
+    para receber um bônus. Nunca há anúncio forçado, e nada que se compre com
+    dinheiro ou se ganhe por anúncio dá vantagem de poder.
   </p>
   <p>
-    Esse arquivo nunca sai do aparelho. Ninguém — nem o autor do jogo — tem
-    acesso a ele.
+    Os vídeos são servidos pelo <strong>Google AdMob</strong>. Ao exibi-los, o
+    AdMob pode acessar o <strong>identificador de publicidade do seu aparelho</strong>
+    (AAID no Android, IDFA no iOS) e informações técnicas do dispositivo, sob a
+    política de privacidade do Google. Esse é o único caso em que um terceiro
+    recebe dado seu. Você pode limitar ou zerar esse identificador nas
+    configurações do próprio sistema, e no iOS o app pede sua permissão antes de
+    usá-lo para rastreamento.
+  </p>
+  <p>
+    Política do Google:
+    <a href="https://policies.google.com/technologies/partner-sites">como o Google usa dados de parceiros</a>.
   </p>
 
   <h3>O que o jogo NÃO faz</h3>
   <ul>
-    <li>Não pede cadastro, e-mail, telefone nem login de rede social.</li>
-    <li>Não usa analytics, SDK de publicidade nem identificador de anúncio.</li>
+    <li>Não pede e-mail, telefone, nome real, cadastro nem login de rede social.</li>
     <li>Não acessa contatos, fotos, localização, microfone nem câmera.</li>
-    <li>Não faz nenhuma conexão de rede durante o jogo.</li>
-    <li>Não compartilha nem vende nada, porque não há nada a compartilhar.</li>
+    <li>Não coleta o modelo nem o identificador do seu aparelho (o AdMob é a
+        exceção descrita acima).</li>
+    <li>Não tem compra dentro do aplicativo. O "Núcleo" é moeda do jogo e não
+        se compra com dinheiro.</li>
+    <li>Não tem conversa entre jogadores.</li>
+    <li>Não vende dado nenhum a ninguém.</li>
   </ul>
 
   <h3>Permissões</h3>
   <p>
-    O aplicativo pede uma permissão só: <code>VIBRATE</code>, para a vibração do
-    aparelho durante o combate. Ela pode ser desligada dentro do jogo, em
-    <strong>Configurações</strong>.
+    Além do acesso à internet, o aplicativo pede uma permissão só:
+    <code>VIBRATE</code>, para a vibração durante o combate. Ela pode ser
+    desligada dentro do jogo, em <strong>Configurações</strong>.
   </p>
 
-  <h3>Apagar tudo</h3>
+  <h3>Quem opera a infraestrutura</h3>
   <p>
-    Em <strong>Configurações → Créditos → Apagar tudo</strong> você apaga o
-    arquivo de progresso, de vez. Desinstalar o aplicativo tem o mesmo efeito.
-    Como não existe cópia em nenhum outro lugar, não há nada mais a pedir e
-    nada mais a solicitar: apagar é imediato e completo.
+    O servidor do jogo é operado por mim e hospedado na
+    <strong>Vercel Inc.</strong> (Estados Unidos); o banco de dados é o
+    <strong>Supabase</strong>, sobre infraestrutura da Amazon Web Services
+    (Estados Unidos). Os dois atuam como operadores — processam os dados por
+    minha conta e não os usam para fins próprios. Os anúncios são do
+    <strong>Google AdMob</strong>, que atua como controlador dos dados de
+    publicidade que recebe.
+  </p>
+  <p>
+    <strong>Transferência internacional:</strong> os dados descritos aqui são
+    armazenados fora do Brasil (Estados Unidos), com a base legal e as
+    salvaguardas contratuais dos operadores acima.
+  </p>
+
+  <h3>Base legal (LGPD / GDPR)</h3>
+  <ul>
+    <li><strong>Execução do serviço</strong> — a conta, o placar, o quadro de
+        honra e a cópia do save existem para entregar funções que você pediu ao
+        criar a conta.</li>
+    <li><strong>Legítimo interesse</strong> — o contador por IP, para conter
+        abuso; e os dados de partida da campanha, para corrigir a dificuldade
+        do jogo. Você pode se opor a este último apagando a conta.</li>
+    <li><strong>Consentimento</strong> — os anúncios e o identificador de
+        publicidade, que dependem de você escolher assistir ao vídeo e, no iOS,
+        de autorizar o rastreamento.</li>
+  </ul>
+
+  <h3>Apagar tudo, e o que sobrevive</h3>
+  <p>
+    Em <strong>Configurações → Sobre → Seus dados → Apagar tudo</strong> você
+    apaga o arquivo local <em>e</em> pede a exclusão da conta no servidor: o
+    apelido, os resultados de partida, a cópia do save e os dados de campanha
+    saem junto.
+  </p>
+  <p>
+    <strong>Três ressalvas honestas</strong>, porque elas são verdade:
+  </p>
+  <ul>
+    <li>O pedido de exclusão viaja pela internet. <strong>Sem rede, ele fica
+        guardado e sai na próxima vez que houver conexão</strong> — se você
+        apagar o aplicativo antes disso, o pedido não chega. Nesse caso, escreva
+        para o e-mail abaixo.</li>
+    <li>A <strong>placa do quadro de honra</strong> de um ciclo já encerrado é
+        um registro histórico e permanece, com o apelido que você tinha na
+        época. Se quiser que ela saia também, peça por e-mail.</li>
+    <li>Desinstalar o aplicativo apaga o arquivo local, mas <strong>não</strong>
+        avisa o servidor. Use o "Apagar tudo" antes de desinstalar, ou escreva
+        para o e-mail.</li>
+  </ul>
+  <p>
+    <strong>Segunda via, sempre:</strong> escreva para
+    <a href="mailto:orbitalbastion@gmail.com">orbitalbastion@gmail.com</a> e a
+    exclusão é feita à mão. Você também pode pedir acesso, correção ou uma cópia
+    dos seus dados pelo mesmo endereço.
   </p>
 
   <h3>Crianças</h3>
   <p>
-    O jogo não coleta dado nenhum de ninguém, de qualquer idade. Não há coleta
-    de dados de crianças porque não há coleta de dados.
+    O jogo não pergunta a sua idade e não é dirigido a crianças. Não há
+    conversa entre jogadores, e o único texto que alguém escreve é o apelido,
+    que é filtrado e pode ser removido a pedido. Se um responsável souber que
+    uma criança criou uma conta e quiser removê-la, basta escrever para o
+    e-mail acima.
   </p>
 
   <h3>Mudanças</h3>
   <p>
-    Se um dia o jogo passar a coletar alguma coisa, esta página muda antes, e a
-    data abaixo muda junto.
+    Quando o que o jogo coleta mudar, esta página muda no mesmo momento, e a
+    data no rodapé muda junto.
   </p>
 
   <h3>Contato</h3>
@@ -138,55 +290,199 @@ code{
   <h2>English <span class="lang">en</span></h2>
 
   <p class="destaque">
-    Orbital Bastion collects no data about you. There is no server, no account,
-    no advertising and no tracking.
+    The game runs fully offline and without an account. Until you pick a
+    nickname, nothing leaves your device. Picking a nickname creates an
+    anonymous account — no e-mail, no password, no real name — and from then on
+    some things are sent. This page says exactly which.
   </p>
 
-  <h3>What the game stores</h3>
+  <h3>Who is responsible</h3>
   <p>
-    One file, on your own device, holding your progress: stages cleared, Core,
-    parts purchased, chosen guardian, and your language, volume, haptics and
-    accessibility preferences.
+    Daniel Novi, independent developer, controller of the data described here.
+    Contact: <a href="mailto:orbitalbastion@gmail.com">orbitalbastion@gmail.com</a>
+  </p>
+
+  <h3>What stays on your device only</h3>
+  <p>
+    A progress file: stages cleared, Core, parts purchased, chosen guardian and
+    your language, volume, haptics and accessibility preferences. Without an
+    account, it never leaves.
+  </p>
+
+  <h3>What is sent, and why</h3>
+  <p>
+    Everything below requires you to have created an anonymous account. The
+    game can be played in full without any of it.
+  </p>
+  <div class="rolagem">
+  <table>
+    <tr><th>What</th><th>Why</th><th>How long it is kept</th></tr>
+    <tr>
+      <td><strong>Nickname</strong> — the only thing you type</td>
+      <td>identifying you on the leaderboard and profile</td>
+      <td>until you delete the account</td>
+    </tr>
+    <tr>
+      <td><strong>Account identifier</strong> — a random code created by the
+      server, plus an access token</td>
+      <td>knowing the account is yours, without e-mail or password</td>
+      <td>until you delete the account</td>
+    </tr>
+    <tr>
+      <td><strong>Profile face and backdrop</strong> — chosen from a fixed list
+      inside the game</td>
+      <td>how your profile looks</td>
+      <td>until you delete the account</td>
+    </tr>
+    <tr>
+      <td><strong>Results from leaderboard runs</strong> — duration, kills,
+      level, guardian, doctrine and the parts you took</td>
+      <td>building the weekly leaderboard and the hall of fame</td>
+      <td>until you delete the account (see the hall of fame caveat below)</td>
+    </tr>
+    <tr>
+      <td><strong>How your campaign runs go</strong> — which stage you started,
+      won, lost or left, how long it took, the cause of defeat, and how much
+      Core you had</td>
+      <td>finding where the game is too hard and fixing it</td>
+      <td>60 days</td>
+    </tr>
+    <tr>
+      <td><strong>A copy of your save</strong> — compressed and unreadable to
+      the server, plus three readable numbers (Core, stage and run count)</td>
+      <td>not losing everything when you change phones</td>
+      <td>90 days</td>
+    </tr>
+    <tr>
+      <td><strong>IP address</strong></td>
+      <td>limiting automated abuse (not stored alongside your account)</td>
+      <td>see "About the IP", below</td>
+    </tr>
+  </table>
+  </div>
+  <p>
+    <strong>None of this is free text, except the nickname.</strong> Gameplay
+    data is numbers and names from the game itself — there is no field to write
+    in, and there is no chat between players.
+  </p>
+
+  <h3>About the IP</h3>
+  <p>
+    The IP is used as part of a temporary counter that stops one address from
+    creating accounts or submitting results in bulk. It is not stored next to
+    your nickname or your progress. Old counter rows are cleared as the server
+    is used, rather than on a fixed schedule — to be honest about it: a row may
+    survive longer than a few minutes if the server sits idle.
+  </p>
+
+  <h3>Advertising</h3>
+  <p>
+    The game shows <strong>optional</strong> videos that you choose to watch in
+    exchange for a bonus. There is never a forced ad, and nothing bought with
+    money or earned from an ad grants a power advantage.
   </p>
   <p>
-    That file never leaves the device. Nobody — including the game's author —
-    can read it.
+    Videos are served by <strong>Google AdMob</strong>. When showing them,
+    AdMob may access your device's <strong>advertising identifier</strong>
+    (AAID on Android, IDFA on iOS) and technical device information, under
+    Google's privacy policy. This is the only case where a third party receives
+    data about you. You can limit or reset that identifier in your system
+    settings, and on iOS the app asks your permission before using it for
+    tracking.
+  </p>
+  <p>
+    Google's policy:
+    <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner sites</a>.
   </p>
 
   <h3>What the game does NOT do</h3>
   <ul>
-    <li>No sign-up, e-mail, phone number or social login.</li>
-    <li>No analytics, no advertising SDK, no advertising identifier.</li>
+    <li>No e-mail, phone number, real name, sign-up or social login.</li>
     <li>No access to contacts, photos, location, microphone or camera.</li>
-    <li>No network connection while you play.</li>
-    <li>Nothing shared or sold, because there is nothing to share.</li>
+    <li>No collection of your device model or device identifier (AdMob is the
+        exception described above).</li>
+    <li>No in-app purchases. "Core" is in-game currency and cannot be bought
+        with money.</li>
+    <li>No chat between players.</li>
+    <li>No data sold to anyone.</li>
   </ul>
 
   <h3>Permissions</h3>
   <p>
-    The app requests a single permission: <code>VIBRATE</code>, for haptic
-    feedback during combat. It can be turned off inside the game, under
-    <strong>Settings</strong>.
+    Besides internet access, the app requests a single permission:
+    <code>VIBRATE</code>, for haptic feedback during combat. It can be turned
+    off inside the game, under <strong>Settings</strong>.
   </p>
 
-  <h3>Erasing everything</h3>
+  <h3>Who operates the infrastructure</h3>
   <p>
-    Under <strong>Settings → Credits → Erase everything</strong> you delete the
-    progress file for good. Uninstalling the app does the same. Since no copy
-    exists anywhere else, deletion is immediate and complete — there is no
-    request to file and no one to ask.
+    The game server is operated by me and hosted on <strong>Vercel Inc.</strong>
+    (United States); the database is <strong>Supabase</strong>, running on
+    Amazon Web Services infrastructure (United States). Both act as processors —
+    they handle the data on my behalf and do not use it for their own purposes.
+    Advertising is provided by <strong>Google AdMob</strong>, which acts as a
+    controller for the advertising data it receives.
+  </p>
+  <p>
+    <strong>International transfer:</strong> the data described here is stored
+    outside Brazil (in the United States), under the legal basis and contractual
+    safeguards of the processors above.
+  </p>
+
+  <h3>Legal basis (LGPD / GDPR)</h3>
+  <ul>
+    <li><strong>Performance of the service</strong> — the account, leaderboard,
+        hall of fame and save copy exist to deliver features you asked for when
+        creating the account.</li>
+    <li><strong>Legitimate interest</strong> — the per-IP counter, to contain
+        abuse; and campaign gameplay data, to correct the game's difficulty. You
+        can object to the latter by deleting your account.</li>
+    <li><strong>Consent</strong> — advertising and the advertising identifier,
+        which depend on you choosing to watch a video and, on iOS, on
+        authorising tracking.</li>
+  </ul>
+
+  <h3>Erasing everything, and what survives</h3>
+  <p>
+    Under <strong>Settings → About → Your data → Erase everything</strong> you
+    delete the local file <em>and</em> request deletion of the account on the
+    server: nickname, run results, save copy and campaign data go with it.
+  </p>
+  <p>
+    <strong>Three honest caveats</strong>, because they are true:
+  </p>
+  <ul>
+    <li>The deletion request travels over the internet. <strong>With no
+        connection it is queued and sent the next time there is one</strong> —
+        if you uninstall the app before that, the request never arrives. In that
+        case, write to the e-mail below.</li>
+    <li>The <strong>hall of fame plaque</strong> from a closed cycle is a
+        historical record and remains, with the nickname you had at the time. If
+        you want it removed as well, ask by e-mail.</li>
+    <li>Uninstalling the app deletes the local file but does <strong>not</strong>
+        notify the server. Use "Erase everything" before uninstalling, or write
+        to the e-mail.</li>
+  </ul>
+  <p>
+    <strong>A second route, always:</strong> write to
+    <a href="mailto:orbitalbastion@gmail.com">orbitalbastion@gmail.com</a> and
+    deletion is done by hand. You may also request access, correction or a copy
+    of your data at the same address.
   </p>
 
   <h3>Children</h3>
   <p>
-    The game collects no data from anyone, of any age. There is no children's
-    data collection because there is no data collection.
+    The game does not ask your age and is not directed at children. There is no
+    chat between players, and the only text anyone writes is the nickname, which
+    is filtered and can be removed on request. If a guardian learns that a child
+    created an account and wants it removed, writing to the address above is
+    enough.
   </p>
 
   <h3>Changes</h3>
   <p>
-    If the game ever starts collecting anything, this page changes first, and
-    the date below changes with it.
+    When what the game collects changes, this page changes at the same time, and
+    the date in the footer changes with it.
   </p>
 
   <h3>Contact</h3>
@@ -200,7 +496,7 @@ code{
 
 <footer>
   Orbital Bastion &middot; Daniel Novi &middot;
-  Última atualização / Last updated: 27/08/2026
+  Última atualização / Last updated: 02/09/2026
 </footer>
 
 </body>

@@ -81,9 +81,12 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
 
   <p class="destaque">
     O jogo funciona inteiro sem internet e sem conta. Enquanto você não escolher
-    um apelido, nada sai do seu aparelho. Ao escolher um apelido, você cria uma
-    conta anônima — sem e-mail, sem senha, sem nome real — e a partir daí
-    algumas coisas passam a ser enviadas. Esta página diz exatamente quais.
+    um apelido, nada que diga <em>quem você é</em> sai do seu aparelho: o que sai
+    sem conta são números de como vão suas partidas e o relatório de erro, os
+    dois gravados sem dono, e o identificador de publicidade que o anúncio
+    (Google AdMob) lê ao ser exibido. Ao escolher um apelido, você cria uma
+    conta anônima — sem e-mail, sem senha, sem nome real — e a partir daí mais
+    coisas passam a ser enviadas. Esta página diz exatamente quais.
   </p>
 
   <h3>Quem é o responsável</h3>
@@ -103,9 +106,11 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
   <h3>O que é enviado, e para quê</h3>
   <p>
     Quase tudo abaixo depende de você ter criado uma conta anônima, e o jogo
-    pode ser jogado por completo sem nada disso. A exceção é o relatório de
-    erro, que é enviado mesmo sem conta — porque o defeito que mais precisa
-    ser consertado é justamente o que impede alguém de chegar a criar uma.
+    pode ser jogado por completo sem nada disso. Duas coisas são enviadas mesmo
+    sem conta, e gravadas sem dono: o relatório de erro — porque o defeito que
+    mais precisa ser consertado é justamente o que impede alguém de chegar a
+    criar uma — e os números de como vão as partidas na campanha, que existem
+    para achar onde o jogo está difícil demais.
   </p>
   <div class="rolagem">
   <table>
@@ -136,7 +141,8 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
     <tr>
       <td><strong>Como vão suas partidas na campanha</strong> — que fase
       começou, venceu, perdeu ou abandonou, quanto tempo levou, a causa da
-      derrota e quanto Núcleo você tinha</td>
+      derrota e quanto Núcleo você tinha. Enviado com ou sem conta — sem conta,
+      a linha é gravada sem dono</td>
       <td>entender onde o jogo está difícil demais e ajustá-lo</td>
       <td>60 dias</td>
     </tr>
@@ -150,8 +156,8 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
       <td><strong>Relatório de erro</strong> — quando o jogo falha: a mensagem
       do motor, o arquivo e a linha do código do jogo, a pilha de chamada, o
       sistema (Android ou iOS), o <em>modelo</em> do aparelho e as versões do
-      jogo e do motor. <strong>Este é o único item que não exige conta</strong>
-      — sem conta, a linha é gravada sem dono</td>
+      jogo e do motor. <strong>Também não exige conta</strong> — sem conta, a
+      linha é gravada sem dono</td>
       <td>consertar o que quebrou no aparelho de quem está jogando</td>
       <td>30 dias</td>
     </tr>
@@ -176,6 +182,12 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
     são apagadas ao longo do uso do servidor, e não em um prazo fixo — sendo
     honesto: uma linha pode sobreviver mais que alguns minutos se o servidor
     ficar sem movimento.
+  </p>
+  <p>
+    O <strong>país</strong> de onde o pedido veio — informado pela hospedagem a
+    partir do IP — entra numa contagem diária de contas novas por país, para
+    saber de onde vêm os jogadores. É só o número: nenhuma conta guarda país, e
+    não há como saber o país de uma pessoa em particular.
   </p>
 
   <h3>Anúncios</h3>
@@ -215,9 +227,12 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
 
   <h3>Permissões</h3>
   <p>
-    Além do acesso à internet, o aplicativo pede uma permissão só:
-    <code>VIBRATE</code>, para a vibração durante o combate. Ela pode ser
-    desligada dentro do jogo, em <strong>Configurações</strong>.
+    Além do acesso à internet, o aplicativo pede uma permissão de uso:
+    <code>VIBRATE</code>, para a vibração durante o combate, que pode ser
+    desligada dentro do jogo, em <strong>Configurações</strong>. O anúncio
+    (Google AdMob) traz consigo a permissão de identificador de publicidade
+    (<code>AD_ID</code>), que o Android exige para exibir anúncios — ver
+    "Anúncios", acima.
   </p>
 
   <h3>Quem opera a infraestrutura</h3>
@@ -261,9 +276,10 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
   </p>
   <ul>
     <li>O pedido de exclusão viaja pela internet. <strong>Sem rede, ele fica
-        guardado e sai na próxima vez que houver conexão</strong> — se você
-        apagar o aplicativo antes disso, o pedido não chega. Nesse caso, escreva
-        para o e-mail abaixo.</li>
+        guardado por até três dias e sai na próxima vez que o jogo abrir com
+        conexão</strong> — se você apagar o aplicativo antes disso, ou ficar mais
+        de três dias sem abri-lo com rede, o pedido não chega. Nesse caso,
+        escreva para o e-mail abaixo.</li>
     <li>A <strong>placa do quadro de honra</strong> de um ciclo já encerrado é
         um registro histórico e permanece, com o apelido que você tinha na
         época. Se quiser que ela saia também, peça por e-mail.</li>
@@ -305,9 +321,12 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
 
   <p class="destaque">
     The game runs fully offline and without an account. Until you pick a
-    nickname, nothing leaves your device. Picking a nickname creates an
+    nickname, nothing that says <em>who you are</em> leaves your device: what
+    leaves without an account is numbers about how your runs go and the error
+    report, both stored with no owner, and the advertising identifier the ad
+    (Google AdMob) reads when it is shown. Picking a nickname creates an
     anonymous account — no e-mail, no password, no real name — and from then on
-    some things are sent. This page says exactly which.
+    more things are sent. This page says exactly which.
   </p>
 
   <h3>Who is responsible</h3>
@@ -326,10 +345,11 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
   <h3>What is sent, and why</h3>
   <p>
     Almost everything below requires you to have created an anonymous account,
-    and the game can be played in full without any of it. The exception is the
-    error report, which is sent even with no account — because the fault that
-    most needs fixing is precisely the one that stops someone from ever
-    creating one.
+    and the game can be played in full without any of it. Two things are sent
+    even with no account, and stored with no owner: the error report — because
+    the fault that most needs fixing is precisely the one that stops someone
+    from ever creating one — and the numbers about how campaign runs go, which
+    exist to find where the game is too hard.
   </p>
   <div class="rolagem">
   <table>
@@ -360,7 +380,8 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
     <tr>
       <td><strong>How your campaign runs go</strong> — which stage you started,
       won, lost or left, how long it took, the cause of defeat, and how much
-      Core you had</td>
+      Core you had. Sent with or without an account — with no account the row
+      is stored with no owner</td>
       <td>finding where the game is too hard and fixing it</td>
       <td>60 days</td>
     </tr>
@@ -374,9 +395,8 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
       <td><strong>Error report</strong> — when the game fails: the engine
       message, the file and line of the game's code, the call stack, the
       operating system (Android or iOS), the device <em>model</em>, and the
-      game and engine versions. <strong>This is the only item that does not
-      require an account</strong> — with no account the row is stored with no
-      owner</td>
+      game and engine versions. <strong>It does not require an account
+      either</strong> — with no account the row is stored with no owner</td>
       <td>fixing what broke on the phone of someone who is playing</td>
       <td>30 days</td>
     </tr>
@@ -400,6 +420,12 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
     your nickname or your progress. Old counter rows are cleared as the server
     is used, rather than on a fixed schedule — to be honest about it: a row may
     survive longer than a few minutes if the server sits idle.
+  </p>
+  <p>
+    The <strong>country</strong> the request came from — reported by the hosting
+    provider from the IP — goes into a daily count of new accounts per country,
+    to know where players come from. It is only the number: no account stores a
+    country, and there is no way to tell the country of any one person.
   </p>
 
   <h3>Advertising</h3>
@@ -439,9 +465,11 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
 
   <h3>Permissions</h3>
   <p>
-    Besides internet access, the app requests a single permission:
-    <code>VIBRATE</code>, for haptic feedback during combat. It can be turned
-    off inside the game, under <strong>Settings</strong>.
+    Besides internet access, the app requests one permission of its own:
+    <code>VIBRATE</code>, for haptic feedback during combat, which can be turned
+    off inside the game, under <strong>Settings</strong>. The ad (Google AdMob)
+    brings along the advertising identifier permission (<code>AD_ID</code>),
+    which Android requires for showing ads — see "Advertising", above.
   </p>
 
   <h3>Who operates the infrastructure</h3>
@@ -483,9 +511,10 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
   </p>
   <ul>
     <li>The deletion request travels over the internet. <strong>With no
-        connection it is queued and sent the next time there is one</strong> —
-        if you uninstall the app before that, the request never arrives. In that
-        case, write to the e-mail below.</li>
+        connection it is kept for up to three days and sent the next time the
+        game opens with one</strong> — if you uninstall the app before that, or
+        go more than three days without opening it online, the request never
+        arrives. In that case, write to the e-mail below.</li>
     <li>The <strong>hall of fame plaque</strong> from a closed cycle is a
         historical record and remains, with the nickname you had at the time. If
         you want it removed as well, ask by e-mail.</li>
@@ -526,7 +555,7 @@ th{color:var(--fraco); font-weight:600; font-size:12px; text-transform:uppercase
 
 <footer>
   Orbital Bastion &middot; Daniel Novi &middot;
-  Última atualização / Last updated: 02/09/2026
+  Última atualização / Last updated: 04/09/2026
 </footer>
 
 </body>
